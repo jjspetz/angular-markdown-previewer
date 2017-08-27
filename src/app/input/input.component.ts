@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {SharedService} from '../shared.service';
 
 @Component({
   selector: 'input-root',
@@ -6,13 +7,12 @@ import {Component} from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 
-export class InputComponent {
+export class InputComponent implements OnInit {
 
-  rawData = `
-  # Angular Markdown Previewer
-
-  ## Marked in browser
-  Rendered by **marked**.
-  `;
+  data: string;
+  constructor(private _sharedService: SharedService) { }
+  ngOnInit():any {
+      this.data = this._sharedService.rawData;
+  }
 
 }
