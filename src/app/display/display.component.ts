@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {SharedService} from '../shared.service';
 import marked from 'marked';
 
@@ -7,8 +7,7 @@ import marked from 'marked';
   templateUrl: './display.component.html',
   styleUrls: ['./display.component.css']
 })
-export class DisplayComponent implements OnInit {
-
+export class DisplayComponent {
     data: string;
     constructor(private _sharedService: SharedService) { }
     ngOnInit():any {

@@ -1,5 +1,14 @@
 
 <main class='row'>
-  <input-root></input-root>
-  <display></display>
+  <input-root (change)='onChange($event)'></input-root>
+  <display [innerHTML]='display'></display>
+  <!-- <section class='col-md-6 text-center'>
+    <textarea rows="20" [(ngModel)]="data">
+      {{rawData}}
+    </textarea>
+    <h2>{{data}}</h2>
+  </section>
+  <section class='col-md-6 text-center'>
+    <div class='text-left'>{{markdown}}</div>
+  </section> -->
 </main>

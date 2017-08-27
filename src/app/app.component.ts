@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import marked from 'marked';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
+  display: string;
+  onChange(msg) {
+    this.display = marked(msg);
+  }
 }
