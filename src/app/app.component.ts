@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SharedService} from './shared.service';
 import marked from 'marked';
 
 @Component({
@@ -11,6 +12,11 @@ import marked from 'marked';
 export class AppComponent {
 
   display: string;
+
+  constructor(private _sharedService: SharedService) { }
+  ngOnInit():any {
+      this.display = marked(this._sharedService.rawData);
+  }
   onChange(msg) {
     this.display = marked(msg);
   }
