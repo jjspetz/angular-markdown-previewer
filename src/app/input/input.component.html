@@ -1,5 +1,10 @@
 <section class='text-center'>
-  <textarea rows="20" (keyup)="inputChange($event)">
+  <textarea id='mdContent' rows="20" (keyup)="inputChange($event)">
     {{data}}
   </textarea>
+  <form>
+    <label>Download as:</label>
+    <input type="text" id="fileName"/>
+    <button type="button" (click)='download()'>Save to File</button>
+  </form>
 </section>
