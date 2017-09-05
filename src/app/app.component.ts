@@ -13,8 +13,8 @@ export class AppComponent {
 
   display: string;
 
-  constructor(private _sharedService: SharedService) { }
-  ngOnInit():any {
+  constructor(private _sharedService: SharedService) {}
+  ngOnInit() {
       this.display = marked(this._sharedService.rawData);
   }
   onChange(msg) {

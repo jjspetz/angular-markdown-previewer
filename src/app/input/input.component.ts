@@ -24,7 +24,7 @@ export class InputComponent{
   }
 
   download() {
-    let name = (<HTMLInputElement>document.getElementById("fileName")).value;
+    let name: string = (<HTMLInputElement>document.getElementById("fileName")).value;
     let blob = new Blob([this.data], {
               type: "text/plain;charset=utf-8"
           });
