@@ -12,4 +12,4 @@ This is a quick project I did to test out Angular 2. I have not invested enough 
 
 ### Lessons Learned
 
-I really found this project helpful in understanding how Angular 2 works in relation to React (with which I am more proficient). This was also very valuable for teaching myself test-writing. Around the time I wrote this project I went back over older projects and wrote test for already completed projects. This project I wrote the test more or less concurrently to give it a test driven development feel.
+I really found this project helpful in understanding how Angular 2 works in relation to React (with which I am more proficient). This was also very valuable for teaching myself test-writing. In the end I was not a big fan of Angular 2, but I really enjoyed working with TypeScript. Around the time I wrote this project I went back over older projects and wrote test for already completed projects. This project I wrote the test more or less concurrently to give it a test driven development feel.
